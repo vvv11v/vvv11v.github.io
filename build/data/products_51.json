@@ -1,0 +1,22 @@
+[
+  {
+  "title": "A4tech S",
+  "price": 340,
+  "visible": 1
+  },
+  {
+  "title": "A4tech M",
+  "price": 580,
+  "visible": 1
+  },
+  {
+  "title": "A4tech L",
+  "price": 790,
+  "visible": 1
+  },
+  {
+  "title": "Red Square GTX XXL",
+  "price": 1890,
+  "visible": 1
+  }
+  ]

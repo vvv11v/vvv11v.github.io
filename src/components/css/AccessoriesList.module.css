@@ -1,0 +1,32 @@
+.bullet {
+  margin-left: 0;
+  list-style: none;
+  counter-reset: li;
+}
+.bullet li {
+  position: relative;
+  margin-bottom: 1.5em;
+  border: 3px solid lightgray;
+  padding: 0.6em;
+  border-radius: 4px;
+  background: #fefefe;
+  color: #231f20;
+  cursor: pointer;
+}
+.bullet li:hover {
+  border: 3px solid grey;
+}
+
+.bullet li:before {
+  position: absolute;
+  top: -0.7em;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  font-size: 16px;
+  font-weight: bold;
+  color: blueviolet;
+  background: #fefefe;
+  border-radius: 50%;
+  counter-increment: li;
+  content: counter(li);
+}

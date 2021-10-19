@@ -1,0 +1,42 @@
+﻿[
+  {
+  "title": "Блок питания EVGA 500 B1 100-B1-0500-K2, 80+ BRONZE, 500Вт",
+  "price": 4600,
+  "visible": 1
+  },
+  {
+  "title": "Блок питания EVGA 600 BR 100-BR-0600-K2, 80+ BRONZE, 600Вт",
+  "price": 5300,
+  "visible": 1
+  },
+  {
+  "title": "Блок питания Be Quiet! SYSTEM POWER 9 500W, 80+ Bronze, 500Вт",
+  "price": 4600,
+  "visible": 1
+  },
+  {
+  "title": "Блок питания Be Quiet! SYSTEM POWER 9 600W, 80+ Bronze, 600Вт",
+  "price": 5500,
+  "visible": 1
+  },
+  {
+  "title": "Блок питания Be Quiet! PURE POWER 11 500W, 80+ Gold, 500Вт",
+  "price": 5700,
+  "visible": 1
+  },
+  {
+  "title": "Блок питания Be Quiet! PURE POWER 11 600W, 80+ Gold, 600Вт",
+  "price": 6400,
+  "visible": 1
+  },
+  {
+  "title": "Блок питания Aerocool VX-350 PLUS, 80+",
+  "price": 1400,
+  "visible": 1
+  },
+  {
+  "title": "Блок питания Aerocool VX-400 PLUS, 80+",
+  "price": 1700,
+  "visible": 1
+  }
+  ]

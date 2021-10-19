@@ -1,0 +1,32 @@
+﻿[
+  {
+  "title": "Накопитель SSD, M.2 KINGSTON A2000 500Gb , M.2 2280, NVMe",
+  "price": 4700,
+  "visible": 1
+  },
+  {
+  "title": "Накопитель SSD, M.2 KINGSTON A2000 1000Gb , M.2 2280, NVMe",
+  "price": 8900,
+  "visible": 1
+  },
+  {
+  "title": "Накопитель SSD, M.2 KINGSTON A2000 2000Gb , M.2 2280, NVMe",
+  "price": 20900,
+  "visible": 1
+  },
+  {
+  "title": "Накопитель SSD Kingston A400 240Gb SA400S37/240G, 2.5\", SATA",
+  "price": 2670,
+  "visible": 1
+  },
+  {
+  "title": "Накопитель SSD Kingston A400 480Gb SA400S37/480G, 2.5\", SATA",
+  "price": 3980,
+  "visible": 1
+  },
+  {
+  "title": "Накопитель SSD Crucial MX500 500Gb, 2.5\", SATA",
+  "price": 4900,
+  "visible": 1
+  }
+  ]

@@ -1,0 +1,22 @@
+[
+  {
+  "title": "Logitech K120",
+  "price": 700,
+  "visible": 1
+  },
+  {
+  "title": "Logitech K280e",
+  "price": 1200,
+  "visible": 1
+  },
+  {
+  "title": "Logitech G213",
+  "price": 4990,
+  "visible": 1
+  },
+  {
+  "title": "Red Square Old School",
+  "price": 3890,
+  "visible": 0
+  }
+  ]

@@ -1,0 +1,17 @@
+@import-normalize; /* bring in normalize.css styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=fallback');
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  background: #f2f2f2;
+}
+
+h2 {
+  color: grey;
+}
+h1 {
+  color: blueviolet;
+}
