@@ -29,6 +29,15 @@
 .price span {
   color: blueviolet;
 }
+h2 {
+  display: flex;
+}
+.kof {
+  margin-left: 20px;
+}
+.kof input {
+  width: 50px;
+}
 
 @media (max-width: 640px) {
   .main {

@@ -20,6 +20,7 @@ function App() {
   const [accessoryId, setAccessoryId] = useState<number>(0)
   const [accessoriesDisabled, setAccessoriesDisabled] = useState<[]>([])
   const [priceTotal, setPriceTotal] = useState<number>(0)
+  const [kof, setKof] = useState(1.05)
 
   useEffect(() => {
     setAccessoriesDisabled(getAccessoriesId(products))
@@ -91,7 +92,18 @@ function App() {
           />
           {priceTotal !== 0 && (
             <h2 className={styles.price}>
-              Цена: <span>{priceTotal}</span> руб.
+              <span>
+                Цена: <span>{priceTotal * kof}</span> руб.
+              </span>
+              <span className={styles.kof}>
+                <input
+                  value={kof}
+                  type='number'
+                  onChange={(e) => {
+                    setKof(Number(e.target.value))
+                  }}
+                />
+              </span>
             </h2>
           )}
         </div>
