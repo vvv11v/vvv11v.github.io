@@ -17,7 +17,7 @@ const CardList = ({
   return (
     <div className={styles.list}>
       {products.map((item, i) => (
-        <div key={i} className={styles.card}>
+        <div key={item.id} className={styles.card}>
           <div>
             <div className={styles.title}>{item.title}</div>
             <div className={styles.price}>

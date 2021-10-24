@@ -25,6 +25,7 @@ function App() {
   useEffect(() => {
     setAccessoriesDisabled(getAccessoriesId(products))
     setPriceTotal(calculatePriceTotal(products))
+    console.log(products)
   }, [products])
 
   function shouldDisplayProducts(accessoryId: number): void {
@@ -34,6 +35,7 @@ function App() {
 
   function handleProductAddToCard(item: IProduct, accessoryId: number): void {
     item.accessory = accessoryId
+    item.id = Number(new Date())
     setProducts([...products, item].sort(sortCard))
     setIsModal(false)
   }
