@@ -17,5 +17,6 @@ export interface IProduct {
   description: string
   photo: string
   price: number
+  newPrice?: number
   accessory: number
 }

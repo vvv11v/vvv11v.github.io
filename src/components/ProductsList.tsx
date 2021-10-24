@@ -24,8 +24,14 @@ const ProductsList: FC<ProductsListProps> = ({
 
   async function fetchProducts() {
     const getProducts = await ProductService.getGroup(accessoryId)
-    getProducts && setProducts(getProducts)
+    getProducts &&
+      setProducts(
+        getProducts.sort(function (a: any, b: any) {
+          return a.price - b.price
+        })
+      )
   }
+
   return (
     <div>
       {products.length ? (

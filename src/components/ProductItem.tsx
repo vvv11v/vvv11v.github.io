@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 
 import { IProduct } from '../types/types'
+import styles from './ProductItem.module.css'
 
 interface ProductItemProps {
   product: IProduct
@@ -16,14 +17,10 @@ const ProductItem: FC<ProductItemProps> = ({
   return (
     <div
       onClick={() => handleProductAddToCard(product, accessoryId)}
-      style={{ cursor: 'pointer', padding: '10px' }}
+      className={styles.list}
     >
-      <div style={{ borderBottom: '1px solid blueviolet' }}>
-        {product.title}
-        <span style={{ color: 'grey', paddingLeft: '20px' }}>
-          {product.price} руб.
-        </span>
-      </div>
+      <span>{product.title}</span>
+      <span className={styles.price}>{product.price} руб.</span>
     </div>
   )
 }

@@ -8,6 +8,8 @@ export function getAccessoriesId(products: IProduct[]): [] {
 
 export function calculatePriceTotal(products: IProduct[]): number {
   const result: number[] = []
-  products.map((p) => result.push(p.price))
+  products.map((p: IProduct) =>
+    p.newPrice ? result.push(p.newPrice) : result.push(p.price)
+  )
   return result.reduce((acc, num) => acc + num, 0)
 }

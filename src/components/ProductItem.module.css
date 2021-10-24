@@ -1,0 +1,12 @@
+.list {
+  border-bottom: blueviolet 1px solid;
+  padding: 7px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.list:hover {
+  background-color: antiquewhite;
+}

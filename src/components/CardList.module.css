@@ -4,6 +4,7 @@
 .card {
   width: 95%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: white;
   border-radius: 10px;
@@ -29,6 +30,8 @@
 }
 .price {
   padding-top: 10px;
+  display: flex;
+  justify-content: flex-start;
 }
 .edit,
 .trash {
@@ -49,4 +52,16 @@
 .edit:hover,
 .trash:hover {
   border: blueviolet 2px solid;
+}
+
+.col {
+  margin-right: 10px;
+}
+
+.input {
+  width: 40px;
+}
+.but {
+  display: flex;
+  justify-content: space-between;
 }

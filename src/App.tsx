@@ -33,18 +33,31 @@ function App() {
 
   function handleProductAddToCard(item: IProduct, accessoryId: number): void {
     item.accessory = accessoryId
-    setProducts([...products, item])
+    setProducts([...products, item].sort(sortCard))
     setIsModal(false)
   }
 
   function handleProductRemoveFromCard(item: IProduct): void {
-    setProducts(products.filter((p) => p.title !== item.title))
+    setProducts(products.filter((p) => p.title !== item.title).sort(sortCard))
   }
 
   function handleProductReplaceToCard(item: IProduct): void {
-    setProducts(products.filter((p) => p.title !== item.title))
+    setProducts(products.filter((p) => p.title !== item.title).sort(sortCard))
     setAccessoryId(item.accessory)
     setIsModal(true)
+  }
+
+  function countProduct(num: number, product: IProduct) {
+    const newPrice = num * product.price
+    product.newPrice = newPrice
+    const newProducts = products.filter((item) => item.title !== product.title)
+
+    setProducts([...newProducts, product].sort(sortCard))
+  }
+
+  function sortCard(a: any, b: any) {
+    if (a.title < b.title) return -1
+    else return 1
   }
 
   return (
@@ -74,6 +87,7 @@ function App() {
             products={products}
             handleProductRemoveFromCard={handleProductRemoveFromCard}
             handleProductReplaceToCard={handleProductReplaceToCard}
+            countProduct={countProduct}
           />
           {priceTotal !== 0 && (
             <h2 className={styles.price}>

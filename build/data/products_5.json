@@ -13,5 +13,10 @@
   "title": "GeForce GTX1070 8Gb ас",
   "price": 22000,
   "visible": 1
+  },
+  {
+  "title": "GeForce GTX1060 6Gb ас",
+  "price": 15000,
+  "visible": 1
   }
   ]

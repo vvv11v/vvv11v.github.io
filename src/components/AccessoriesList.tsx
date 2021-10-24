@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import AccessoriesService from '../API/AccessoriesService'
 import { IAccessory, ICategory } from '../types/types'
@@ -9,7 +9,7 @@ interface AccessoriesListProps {
   category: ICategory
 }
 
-const AccessoriesList: FC<AccessoriesListProps> = ({ category }) => {
+const AccessoriesList = ({ category }: AccessoriesListProps) => {
   const [accessories, setAccessories] = useState<IAccessory[]>([])
 
   useEffect(() => {

@@ -12,7 +12,10 @@
   padding: 25px;
   background: white;
   border-radius: 16px;
+  width: 70%;
   min-width: 300px;
+  max-height: 90%;
+  overflow-y: scroll;
 }
 
 .productModal.active {
